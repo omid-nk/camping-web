@@ -12,3 +12,14 @@ body{
     font-size: 1.6rem;
     line-height: 1.6;
 }
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)), url("../images/header-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
