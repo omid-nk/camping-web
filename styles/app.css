@@ -432,7 +432,7 @@ newsletter
 
 .newsletter__getmail__icon{
     position: absolute;
-    left: 1rem;
+    left: 1.5rem;
 }
 
 .newsletter__getmail__input{
@@ -457,9 +457,89 @@ newsletter
     box-shadow: 0 2px 12px -6px rgba(255, 42, 0);
     cursor: pointer;
 }
-
-.newsletter__right{
+.newsletter__btngetmail__btn__icon{
+    width: 18px;
 }
 .newsletter__right__img{
     width: 100%;
+}
+
+/* ///////////////////
+footer
+////////////////// */
+.footer{
+    background-color: #f8e1d9 ;
+    border-top-left-radius: 6rem;
+    border-top-right-radius: 6rem;
+    margin-top: 10rem;
+}
+.footer-base {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding: 10rem 0;
+    gap: 6rem;
+    color: var(--dark-color);
+    text-align: center;
+}
+.footer__links{
+    width: 100%;
+}
+
+.footer__left{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer__caption{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 4rem;
+}
+
+.footer__right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+
+.footer__title{
+    font-family: var(--secondary-font);
+    margin-bottom: 1rem;
+}
+
+.footer__link a, .footer__link {
+    color: var(--dark-color);
+    margin: 0.6rem 0;
+    transition: all 0.2s ease;
+}
+
+.footer__link a:hover{
+    color: var(--primary-color);
+}
+
+.copyright-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-color);
+    padding: 4rem 0;
+}
+
+.gotop-btn{
+    position: absolute;
+    top: -3rem;
+    right: 5rem;
+    width: 6rem;
+    height: 6rem;
+    border: none;
+    background-color: var(--bg-color);
+    border-radius: var(--round);
 }
