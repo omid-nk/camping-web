@@ -89,6 +89,7 @@ mobile menu
     background-color: var(--dark-color);
     padding: 2.5rem;
     transition: all 0.2s ease-in-out;
+    z-index: 99;
 }
 .mobile-menu--open{
     left: 0;
