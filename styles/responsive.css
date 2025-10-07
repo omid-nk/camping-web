@@ -108,6 +108,12 @@
     .hero-section {
         margin-top: 10rem;
     }
+    .newsletter {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 2rem 8rem;
+        text-align: left;
+    }
 
 }
 
@@ -127,6 +133,7 @@
         width: 70%;
         font-size: 3rem;
     }
+
 }
 
 @media (min-width:1400px) {
