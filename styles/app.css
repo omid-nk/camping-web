@@ -262,7 +262,7 @@ services
 
 .services__item__caption{
     color: var(--dark-color);
-    max-width: 80% ;
+    max-width: 100% ;
 }
 
 /* ///////////////////
@@ -282,12 +282,12 @@ Destination
     color: var(--dark-color);
     font-size: 2.8rem;
     text-align: center;
+    max-width: 36rem;
 }
 
 .destinations__places{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 1.4rem;
 }
@@ -295,11 +295,11 @@ Destination
 .place-card{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     text-align: center;
-    max-width: 32rem;
     flex-grow: 1;
+    width: 32rem;
     padding: 2rem;
     background-color: var(--bg-color);
     border-radius: 4rem;
@@ -308,8 +308,9 @@ Destination
 .place-card:hover{
     box-shadow: 0 0 12px -8px rgb(255, 96, 10);
 }
-.place-cad__banner{
+.place-card__banner{
     position: relative;
+    width: 100%;
 }
 
 .place-card__img{
@@ -329,11 +330,18 @@ Destination
     background-color: var(--bg-color);
     cursor: pointer;
 }
-
-.place-card__heart__icon{
-    display: block;
-    margin: auto;
+.place-card__heart path {
+  fill: var(--bg-color); 
+  stroke: var(--primary-color);
+  stroke-width: 1.2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  transition: fill 0.3s ease;
 }
+.place-card__heart.place-card__heart__icon--fill path {
+  fill: var(--primary-color);
+}
+
 .place-card__price{
     position: absolute;
     bottom: -1rem;
@@ -353,6 +361,7 @@ Destination
     font-family: var(--secondary-font);
     color: var(--dark-color);
     text-align: center;
+    font-size: 1.8rem;
 }
 
 .place-card__caption{
@@ -376,6 +385,8 @@ Destination
     transition: all 0.2s ease;
 }
 .destinations__link:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
     box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.4);
 }
 

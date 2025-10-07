@@ -14,3 +14,14 @@ navBtn.addEventListener("click",function(){
         navOpen = true
     }
 })
+
+// like btn destination section
+document.addEventListener("DOMContentLoaded", () => {
+    const likeButtons = document.querySelectorAll(".place-card__heart");
+
+    likeButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            btn.classList.toggle("place-card__heart__icon--fill");
+        });
+    });
+});
