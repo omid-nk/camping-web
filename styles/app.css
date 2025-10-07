@@ -264,3 +264,121 @@ services
     color: var(--dark-color);
     max-width: 80% ;
 }
+
+/* ///////////////////
+Destination
+////////////////// */
+.destinations{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10rem;
+    gap: 4rem;
+}
+
+.denstinations__title{
+    font-family: var(--secondary-font);
+    color: var(--dark-color);
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.destinations__places{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+}
+
+.place-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 32rem;
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: var(--bg-color);
+    border-radius: 4rem;
+    transition: all 0.2s ease;
+}
+.place-card:hover{
+    box-shadow: 0 0 12px -8px rgb(255, 96, 10);
+}
+.place-cad__banner{
+    position: relative;
+}
+
+.place-card__img{
+    width: 100%;
+    border-radius: var(--round);
+}
+
+.place-card__heart{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem 1rem 0 0  ;
+    padding: 0.6rem;
+    border-radius: 1.2rem;
+    background-color: var(--bg-color);
+    cursor: pointer;
+}
+
+.place-card__heart__icon{
+    display: block;
+    margin: auto;
+}
+.place-card__price{
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    right: 0;
+    max-width: 16rem;
+    max-height: 4rem;
+    line-height: 4rem;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+    border-radius: 1rem;
+    color: var(--primary-color);
+}
+
+.place-card__title{
+    margin: 2.2rem 0 1rem;
+    font-family: var(--secondary-font);
+    color: var(--dark-color);
+    text-align: center;
+}
+
+.place-card__caption{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: var(--dark-color);
+
+}
+
+.place-card__link{
+    border-radius: 1.2rem;
+    color: var(--dark-color);
+    background-color: #f1f1f1;
+}
+
+.destinations__link{
+    color: var(--primary-color);
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    margin-bottom: 4rem;
+    transition: all 0.2s ease;
+}
+.destinations__link:hover {
+    box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.4);
+}
+
+/* ///////////////////
+
+////////////////// */
