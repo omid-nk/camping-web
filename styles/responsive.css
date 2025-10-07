@@ -1,10 +1,24 @@
 @media (min-width:576px) {
    .nav {
     padding: 2rem 0;
-    } 
+    }
+
+    .hero-section {
+        margin-top: 10rem;
+    }
 }
 
 @media (min-width:768px) {
+    .hero-section {
+        margin-top: 12rem;
+    }
+    .hero-section__title{
+        font-size: 5rem;
+    }
+    .hero-section__body{
+        width: 70%;
+        font-size: 2rem;
+    }
 
 }
 
@@ -32,32 +46,39 @@
     }
     
     /* ///////////////////
-    effect hove & active navbar
+    effect hover & active navbar
     ////////////////// */
     .menu__link {
-        font-family: "Roboto-Medium";
-        color: #D2D2D2;
+        font-family: var(--primary-font);
+        color: var(--grey-color);
         transition: all 0.2s ease-in;
     }
     .menu__link:hover {
         color: var(--bg-color);
     }
-    .menu__link:active{
+    .menu__link{
         color: var(--bg-color);
         position: relative;
         z-index: 1;
+        transition: all 0.2s ease;
     }
-    .menu__link:active::before {
+    .menu__link::before {
         content: "";
         position: absolute;
         top: 0.7rem;
         left: 0;
         right: 0;
         margin: 0 auto;
-        width: 4rem;
+        width: 1rem;
         height: 0.3rem;
         border-radius: 1rem;
         transform: rotate(45deg);
+        background-color: transparent;
+        z-index: -1;
+        transition: all 0.2s ease;
+    }
+    .menu__link:hover::before, .menu__link:active::before {
+        width: 4rem;
         background-color: var(--primary-color);
         z-index: -1;
     }
@@ -66,7 +87,6 @@
         align-items: center;
         gap: 1.5rem;
     }
-
     .header__link {
         color: var(--bg-color);
         padding: 1rem 2.5rem;
@@ -76,19 +96,55 @@
         padding: 1rem 2.5rem;
         border-color: var(--primary-color);
     }
-
     .header__link--border {
         border: 1px solid var(--bg-color);
         border-radius: 2rem;
         transition: all 0.2s ease;
     }
-    
+
+    /* ///////////////////
+    hero section
+    ////////////////// */
+    .hero-section {
+        margin-top: 10rem;
+    }
+
 }
 
 @media (min-width:1200px) {
+    .header {
+        min-height: 90rem;
+    }
+    .hero-section {
+        margin-top: 16rem;
+    }
 
+    .hero-section__title {
+        font-size: 6rem;
+    }
+
+    .hero-section__body {
+        width: 70%;
+        font-size: 3rem;
+    }
 }
 
 @media (min-width:1400px) {
+    .header {
+        min-height: 90rem;
+        max-width: 1780px;
+        margin: 0 auto;
+    }
+    .hero-section {
+        margin-top: 30rem;
+    }
     
+    .hero-section__title {
+        font-size: 6rem;
+    }
+    
+    .hero-section__body {
+        width: 60%;
+        font-size: 3rem;
+    }
 }
